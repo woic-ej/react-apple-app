@@ -1,5 +1,5 @@
-.slider {
-    position : relative;
+.slider{
+    position: relative;
 }
 
 .slider__arrow-left{
@@ -9,7 +9,7 @@
     transition: 400ms all ease-in-out;
     cursor: pointer;
     width: 80px;
-    z-index: 1000; 
+    z-index: 1000;
     position: absolute;
     left: 0;
     top: 0;
@@ -20,14 +20,14 @@
     visibility: hidden;
 }
 
-.slider__arrow-right{
+.slider__arrow-right {
     background-clip: content-box;
     padding: 20px 0;
     box-sizing: border-box;
     transition: 400ms all ease-in-out;
     cursor: pointer;
     width: 80px;
-    z-index: 1000; 
+    z-index: 1000;
     position: absolute;
     right: 0;
     top: 0;
@@ -47,7 +47,7 @@
     transform: scale(1.5);
 }
 
-.slider:hover .slider__arrow-left {
+.slider:hover .slider__arrow-left{
     transition: 400ms all ease-in-out;
     visibility: visible;
 }
@@ -58,16 +58,16 @@
 }
 
 .slider__arrow-left:hover{
-    background-color: rgba(20,20,20,0.5);
+    background: rgba(20, 20, 20, 0.5);
     transition: 400ms all ease-in-out;
 }
 
-.slider__arrow-right:hover{
-    background-color: rgba(20,20,20,0.5);
+.slider__arrow-right:hover {
+    background: rgba(20, 20, 20, 0.5);
     transition: 400ms all ease-in-out;
 }
 
-.row__posters {
+.row__posters{
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
@@ -84,13 +84,12 @@
     border-radius: 4px;
 }
 
-.row__posters::-webkit-scrollbar {
+.row__posters::-webkit-scrollbar{
     display: none;
 }
 
 .row__poster:hover{
     transform: scale(1.08);
-
 }
 
 @media screen and (min-width: 1200px){
@@ -99,8 +98,29 @@
     }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
     .row__poster{
         max-height: 100px;
     }
+}
+
+.swiper-pagination{
+    text-align: right !important;
+}
+
+.swiper-pagination-bullet{
+    background: gray !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: white !important;
+}
+
+.swiper-button-prev{
+    color: white !important;
+}
+
+.swiper-button-next{
+    color: white !important;
 }
