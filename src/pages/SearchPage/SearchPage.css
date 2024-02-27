@@ -24,7 +24,7 @@
     transform: scale(1.25);
 }
 
-.no-result {
+.no-results {
     display: flex;
     justify-content: center;
     align-items: center;
